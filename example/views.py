@@ -2,9 +2,10 @@ from datetime import datetime
 import random
 from django.http import HttpResponse
 
-rand=random.randint(1,10)
+
 def index(request):
     now = datetime.now()
+    rand=random.randint(1,10)
     html = f'''
     <html>
         <body>
